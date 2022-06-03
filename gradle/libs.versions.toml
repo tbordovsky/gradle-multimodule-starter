@@ -1,0 +1,17 @@
+[versions]
+junit = "5.8.2"
+
+[libraries]
+# Runtime Dependencies
+guava = {module = "com.google.guava:guava", version = "31.1-jre"}
+logback-classic = {module = "ch.qos.logback:logback-classic", version = "1.2.11"}
+
+# Test Dependencies
+junit-jupiter-api = {module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit"}
+junit-jupiter-engine = {module = "org.junit.jupiter:junit-jupiter-engine", version = "junit"}
+
+[bundles]
+# bundles
+
+[plugins]
+# plugins
