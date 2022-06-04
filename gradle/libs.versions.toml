@@ -8,7 +8,7 @@ logback-classic = {module = "ch.qos.logback:logback-classic", version = "1.2.11"
 
 # Test Dependencies
 junit-jupiter-api = {module = "org.junit.jupiter:junit-jupiter-api", version.ref = "junit"}
-junit-jupiter-engine = {module = "org.junit.jupiter:junit-jupiter-engine", version = "junit"}
+junit-jupiter-engine = {module = "org.junit.jupiter:junit-jupiter-engine", version.ref = "junit"}
 
 [bundles]
 # bundles
