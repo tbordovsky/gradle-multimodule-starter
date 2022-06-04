@@ -8,3 +8,4 @@
  */
 
 rootProject.name = 'gradle-multimodule-starter'
+include 'common', 'hello'
