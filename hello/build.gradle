@@ -1,0 +1,17 @@
+plugins {
+    id 'gradle-multimodule-starter.java-conventions'
+    id 'application'
+}
+
+dependencies {
+    implementation project(':common')
+    implementation libs.guava
+    implementation libs.logback.classic
+
+    testImplementation libs.junit.jupiter.api
+    testImplementation libs.junit.jupiter.engine
+}
+
+application {
+    mainClass = 'Hello'
+}

@@ -1,0 +1,11 @@
+plugins {
+    id 'gradle-multimodule-starter.java-conventions'
+}
+
+dependencies {
+    implementation libs.guava
+    implementation libs.logback.classic
+
+    testImplementation libs.junit.jupiter.api
+    testImplementation libs.junit.jupiter.engine
+}
