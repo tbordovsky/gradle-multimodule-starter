@@ -1,0 +1,11 @@
+interface DockerExtension {
+    Property<String> getImageName()
+}
+
+project.extensions.create('docker', DockerExtension)
+
+tasks.register('dockerBuild', Exec) {
+    workingDir rootDir
+    executable 'docker'
+    args = [ "build", "-f", "${projectDir}/Dockerfile", "-t", docker.imageName.get(), "." ]
+}

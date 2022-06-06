@@ -1,5 +1,6 @@
 plugins {
     id 'gradle-multimodule-starter.java-conventions'
+    id 'gradle-multimodule-starter.docker-conventions'
     id 'application'
 }
 
@@ -14,4 +15,8 @@ dependencies {
 
 application {
     mainClass = 'Hello'
+}
+
+docker {
+    imageName = 'gradle-multimodule-project/hello'
 }
